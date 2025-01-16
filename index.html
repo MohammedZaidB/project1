@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register-form</title>
+    <style>
+
+        *{
+           margin: 0px;
+           padding: 0px;
+           box-sizing: border-box;
+        }
+        
+    body{
+        background-color: rgb(214, 192, 192);
+        font-family:'Times New Roman', Times, serif;
+    }
+    .registration-form input{
+        
+        width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(206, 179, 179, 0.2);
+            color: rgb(241, 240, 245);
+            font-size: 14px; 
+    }
+    .radio input{
+        width: 22px;
+        font-size: 14px;
+        background: rgb(132, 132, 53);
+        
+    }
+    button{
+        background-color:rgb(240, 244, 252);
+        width: 250px;
+        padding: 7px;
+        border-radius: 12px;  
+    }
+    #b1{
+        background-size: 1300px;
+    }
+    .registration-form{
+        background: rgba(61, 54, 84, 0.669);
+            border: 1px solid rgba(123, 102, 102, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            margin: 50px auto;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(14, 78, 205, 0.2);
+            color: rgb(212, 207, 222);
+    }
+    .radio{
+        font-style: normal;
+        color: rgb(231, 229, 226);
+    }
+    .topic{
+        font-size: 22px;
+    }
+    .registration-form ::placeholder{
+        color: rgb(203, 188, 188);
+    }
+    
+    </style>
+</head>
+<body id="b1" style="background-image: url(image.jpg) ;">
+    <form class="registration-form">
+        <div class="topic">
+    <div>REGISTRATION-FORM </div></div><br>
+    <div class="form-group">
+    <label for="Full name">Full Name:</label><br>
+    <input type="text" id="full Name" name="full Name" placeholder="Enter your full name"><br>
+    <label for="phone number">phone number:</label><br>
+    <input type="number" id="phone number" name="phone number" placeholder="Enter your phone number"><br>
+    <label for="Email">Email:</label><br>
+    <input type="text" id="Email" name="Email" placeholder="Enter your email"><br>
+    <label for="Password">Password:</label><br>
+    <input type="password" id="password" name="Password" placeholder="Enter your Password"><br>
+   
+</div>
+
+<div class="radio">
+    <label for="Gender">Gender:</label>
+    <input type="radio" id="radio" name="Gender" value="Male" >Male
+    <input type="radio" id="radio" name="Gender" value="Female">Female
+    <input type="radio" id="radio" name="Gender" value="Other">other
+</div>
+<div class="form-group"></div><br>
+<button type="button">Register</button>
+</form>
+</body>
+</html>
